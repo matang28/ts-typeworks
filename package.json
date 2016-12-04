@@ -1,0 +1,26 @@
+{
+  "name": "typeworks",
+  "version": "0.1.0",
+  "description": "A TypeScript RESTFul Framework for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matang28/ts-typeworks.git"
+  },
+  "keywords": [
+    "rest",
+    "typeworks",
+    "framework",
+    "spring",
+    "express"
+  ],
+  "author": "Matan Golan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matang28/ts-typeworks/issues"
+  },
+  "homepage": "https://github.com/matang28/ts-typeworks#readme"
+}
