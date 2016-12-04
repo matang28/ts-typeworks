@@ -4,7 +4,8 @@
   "description": "A TypeScript RESTFul Framework for Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "tsc -p . && mocha dist/test --recursive",
+    "prepublish": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
   "homepage": "https://github.com/matang28/ts-typeworks#readme",
   "dependencies": {
     "reflect-metadata": "^0.1.8"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-typescript": "^1.0.11"
   }
 }
