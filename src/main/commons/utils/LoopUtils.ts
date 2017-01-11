@@ -1,5 +1,6 @@
 import {Consumer} from "../functions/Consumer";
 import {BiConsumer} from "../functions/BiConsumer";
+import {List} from "../structures/List";
 
 /**
  * A collection of static method to simplify looping.
@@ -21,7 +22,7 @@ export class LoopUtils{
     }
 
     /**
-     * An improved for each method that iterate through array and provide the index of the iteration
+     * An improved for each method that iterates through an array and provide the index of the iteration
      * besides the current item.
      * @param array the array to iterate on.
      * @param biConsumer a bi-consumer function that provide the current item and the current iteration index.
@@ -29,6 +30,14 @@ export class LoopUtils{
     public static forEach <A> (array: A[], biConsumer: BiConsumer<A,number>): void{
         let i:number = 0;
         array.forEach((item)=>{
+            biConsumer(item,i);
+            i++;
+        });
+    }
+
+    public static forEachListItem <A> (list: List<A>, biConsumer: BiConsumer<A,number>): void{
+        let i:number = 0;
+        list.toArray().forEach((item)=>{
             biConsumer(item,i);
             i++;
         });

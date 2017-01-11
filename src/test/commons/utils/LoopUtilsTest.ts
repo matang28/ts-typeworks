@@ -5,7 +5,7 @@
 import {suite} from "mocha-typescript";
 import {test} from "mocha-typescript";
 import {expect, assert} from "chai";
-import {LoopUtils} from "../../main/commons/utils/LoopUtils";
+import {LoopUtils} from "../../../main/commons/utils/LoopUtils";
 
 @suite("LoopUtilsTest")
 class LoopUtilsTest{
