@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/matang28/ts-typeworks#readme",
   "dependencies": {
-    "reflect-metadata": "^0.1.8"
+    "reflect-metadata": "^0.1.9"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
